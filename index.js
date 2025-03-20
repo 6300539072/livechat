@@ -23,9 +23,9 @@ function broadcast(msg) {       // (4)
         if (client.readyState === ws.OPEN) {
             client.send(msg)
         }
-          socket.on('disconnect', () => {
-        console.log('User disconnected');
-    });
+    //       socket.on('disconnect', () => {
+    //     console.log('User disconnected');
+    // });
     }
 }
 server.listen(process.argv[2] || 8081, () => {
